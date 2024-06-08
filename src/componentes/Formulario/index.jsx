@@ -3,6 +3,7 @@ import "./formulario.css";
 
 //React
 import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 //Módulos
 import FormularioCampo from "../FormularioCampo";
@@ -28,6 +29,7 @@ const Formulario = (props) => {
       puesto: puesto,
       foto: foto,
       equipo: equipo,
+      id: uuidv4(),
     };
     // Información lista para enviar y/o guardar
     registrarColaborador(datosEnviados);
